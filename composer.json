@@ -1,8 +1,8 @@
 {
   "name": "garrettweinberg/sage-bootstrap5-navwalker",
   "description": "Bootstrap 5 Navbar component navwalker for Sage 10 based themes",
-  "keywords": ["wordpress", "bootstrap 4", "navwalker", "navbar"],
-  "homepage": "https://github.com/MWDelaney/sage-bootstrap5-navwalker",
+  "keywords": ["wordpress", "bootstrap 5", "navwalker", "navbar"],
+  "homepage": "https://github.com/garrettweinberg/sage-bootstrap5-navwalker",
   "license": "MIT",
   "authors": [
     {
