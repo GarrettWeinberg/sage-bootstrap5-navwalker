@@ -2,12 +2,12 @@
 
 **Forked from [MWDelaney/sage-bootstrap4-navwalker](https://github.com/MWDelaney/sage-bootstrap4-navwalker)**
 
-Sets up a Bootstrap 5 Navwalker for Sage 9-based themes.
+Sets up a Bootstrap 5 Navwalker for Sage 10 based themes.
 
-To install, run the following in your Sage9-based theme directory:
+<!-- To install, run the following in your Sage 10 based theme directory:
 ```bash
-composer require "mwdelaney/sage-bootstrap5-navwalker"
-```
+composer require "/sage-bootstrap5-navwalker"
+``` -->
 
 Include the navwalker in your `wp_nav_menu` function:
 
