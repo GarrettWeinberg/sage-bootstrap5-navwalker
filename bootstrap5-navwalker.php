@@ -3,7 +3,7 @@ namespace App;
 
 /**
  * Bootstrap 5 "Navbar" component navwalker drop-in functionality for Sage 10
- * Version: 1.0
+ * Version: 1.1
  * Author: Garrett Weinberg
  *
  */
