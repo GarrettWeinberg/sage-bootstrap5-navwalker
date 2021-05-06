@@ -182,7 +182,7 @@ if (class_exists('\Walker_Nav_Menu')) {
                 if (isset($args->has_children) && $args->has_children && 0 === $depth && $args->depth > 1) {
                     $atts['href']          = '#';
                     $atts['data-href']     = $item->url;
-                    $atts['data-toggle']   = 'dropdown';
+                    $atts['data-bs-toggle']   = 'dropdown';
                     $atts['aria-haspopup'] = 'true';
                     $atts['aria-expanded'] = 'false';
                     $atts['class']         = 'dropdown-toggle nav-link';
