@@ -14,25 +14,36 @@ Include the navwalker in your `wp_nav_menu` function:
 ## As a [Controller](https://github.com/soberwp/controller) method (Recommended)
 In your Controller, probably `app.php`
 ```php
+public function with()
+    {
+        return [
+            'primaryNavigation' => $this->primaryNavigation(),
+        ];
+    }
+
 /**
  * Primary Nav Menu arguments
  * @return array
  */
-public function primarymenu() {
-  $args = array(
-    'theme_location'    => 'primary_navigation',
-    'menu_class'        => 'navbar-nav',
-    'walker'            => new \App\wp_bootstrap5_navwalker(),
-    ...
-  );
-  return $args;
-}
+public function primaryNavigation()
+    {
+        $args = array(
+            'theme_location' => 'primary_navigation',
+            'container'  => '',
+            'container_class' => '',
+            'menu_class' => 'navbar-nav',
+            'depth' => 4,
+            'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+            'walker' => new \App\wp_bootstrap5_navwalker()
+        );
+        return $args;
+    }
 ```
 
 In your Blade file, probably `header.blade.php`
 ```php
 @if (has_nav_menu('primary_navigation'))
-  {!! wp_nav_menu($primarymenu) !!}
+  {!! wp_nav_menu($primaryNavigation) !!}
 @endif
 ```
 
