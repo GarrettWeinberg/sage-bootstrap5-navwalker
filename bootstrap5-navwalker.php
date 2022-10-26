@@ -179,6 +179,8 @@ if (class_exists('\Walker_Nav_Menu')) {
                 $atts['title'] = ! empty($item->attr_title) ? $item->attr_title : '';
                 $atts['target'] = ! empty($item->target) ? $item->target : '';
                 $atts['rel']    = ! empty($item->xfn) ? $item->xfn : '';
+                $atts['data-text']     = $item->title;
+
                 // If the item has children, add atts to the <a>.
                 if (isset($args->has_children) && $args->has_children && 0 === $depth && $args->depth > 1) {
                     $atts['href']          = '#';
